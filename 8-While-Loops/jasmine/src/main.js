@@ -41,6 +41,7 @@ else if(limes[i] == "large"){
 limesCut++
 i++
 }
-console.log(wedgesCut)
+console.log(wedgesCut) 
+// 
 
 
