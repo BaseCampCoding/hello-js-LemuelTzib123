@@ -1,47 +1,69 @@
-let juiceName = "Energizer";
+// task 1 //
+let juiceName = 'Energizer';
 let timeToMixJuiceResult;
-
-if (juiceName == "Pure Strawberry Joy") {
-  timeToMixJuiceResult = 0.5;
+if (juiceName == "Pure Strawberry Joy"){
+    timeToMixJuiceResult = 0.5;
 }
-
-else if (juiceName == "Energizer" || juiceName == "Green Garden") {
-timeToMixJuiceResult = 1.5;
+else if (juiceName == "Energizer" || juiceName == "Green Garder"){
+    timeToMixJuiceResult = 1.5;
 }
-
-else if (juiceName == "Tropical Island") {
-timeToMixJuiceResult = 3;
+else if (juiceName == "Tropical Island"){
+    timeToMixJuiceResult = 3;
 }
-
-else if (juiceName == "All or Nothing") {
-timeToMixJuiceResult = 5;
+else if (juiceName == "All or Nothing"){
+    timeToMixJuiceResult = 5;
 }
-
-else{timeToMixJuiceResult = 2.5;}
-
+else{
+    timeToMixJuiceResult = 2.5;
+}
 console.log(timeToMixJuiceResult);
-
-//Task 2 
-let wedgesNeeded = 120;
+// task 2 //
+let wedgesNeeded = 20;
 limes = ["small", "large", "medium", "large", "small"]
-wedgeCut = 0;
+wedgesCut = 0;
 limesCut = 0;
 i = 0;
-while(wedgesCut < wedgesNeeded && i < limes.length) {
+while(wedgesCut < wedgesNeeded && i < limes.length){
     if (limes[i] == "small"){
-        wedgesCut += 6;
+        wedgesCut += 6
     }
- 
     else if (limes[i] == "medium"){
-wedgeCut
+        wedgesCut += 8
     }
-else if(limes[i] == "large"){
-    wedgesCut += 10;
+    else if (limes[i] == "large"){
+        wedgesCut += 10
+    }
+    limesCut++
+    i++
 }
-limesCut++
-i++
+console.log("Wedges Cut: " + wedgesCut)
+console.log("Limes Cut: " + limesCut)
+// task 3 //
+let timeLeft = 4;
+let orders = ["Energizer", "All or Nothing", "Green Garden", "Tropical Island"];
+let totalTime = 0;
+let remainingOrders = 0
+let orderTrack = []
+let index = 0
+for(let i = 0; i < orders.length; i++){
+    let juice = orders[i]
+    if (juice == "Pure Strawberry Joy"){
+        timeToMixJuiceResult = 0.5;
+    }
+    else if (juice == "Energizer" || juiceName == "Green Garder"){
+        timeToMixJuiceResult = 1.5;
+    }
+    else if (juice == "Tropical Island"){
+        timeToMixJuiceResult = 3;
+    }
+    else if (juice == "All or Nothing"){
+        timeToMixJuiceResult = 5;
+    }
+    else{
+        timeToMixJuiceResult = 2.5;
+    }
+    orderTrack.push(juice)
+    totalTime += timeToMixJuiceResult;
 }
-console.log(wedgesCut) 
-// 
-
-
+while (totalTime < timeLeft && index < orderTrack){
+}
